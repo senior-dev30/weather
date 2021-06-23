@@ -1,0 +1,37 @@
+.SideBar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  grid-area: sidebar;
+  position: relative;
+
+  & li {
+    list-style-type: none;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+  }
+
+  &__Content {
+    position: absolute;
+    background-color: #7367f0;
+    padding: 20px;
+    right: 60px;
+    top: -40px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .SideBar {
+    grid-area: -2 / 1 / -1 / -1;
+
+    &__Content {
+      width: unset;
+      margin-top: 60px;
+      position: unset;
+
+    }
+  }
+}

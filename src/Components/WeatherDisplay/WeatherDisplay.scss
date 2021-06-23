@@ -1,0 +1,66 @@
+.WeatherDisplay {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  repeat(2, minmax(min-content, max-content));
+  grid-template-areas:
+  "header tagline tagline"
+  ". . . ";
+  justify-items: center;
+  border-top: #4769f1 5px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  text-align: center;
+
+  & span {
+    display: block;
+  }
+
+  &__Summary {
+    text-align: left;
+    place-self: flex-start;
+    grid-area: header;
+    height: 82px;
+
+    &__Title {
+      margin-top: 0;
+    }
+  }
+
+  &__TagLine {
+    color: #17336b;
+    grid-area: tagline;
+  }
+
+  &__Temperature {
+    &__MinMax {
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & h3 {
+      grid-area: header;
+
+    }
+
+    ul {
+      text-align: left;
+    }
+  }
+
+  &--inactive {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .WeatherDisplay {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+

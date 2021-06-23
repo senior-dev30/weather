@@ -1,0 +1,25 @@
+.CountrySearch {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__error {
+    color: red;
+  }
+}
+
+@media (max-width: 900px) {
+  .CountrySearch {
+    flex-direction: column;
+    align-content: start;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .CountrySearch {
+    padding-right: 0;
+
+  }
+}

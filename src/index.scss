@@ -1,0 +1,38 @@
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+input {
+  padding: 3px 0 3px 3px;
+
+}
+
+.btn, button {
+  padding: 8px 9px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #4769f1;
+
+  &:hover {
+    background-color: #17336b;
+  }
+}
+
+.justify-center {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.place-center {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}

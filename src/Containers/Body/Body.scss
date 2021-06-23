@@ -1,0 +1,16 @@
+.Body {
+  background-color: white;
+  grid-area: body;
+}
+
+@media (max-width: 1060px) {
+  .Body {
+    max-width: 1180px;
+    margin: 0 auto;
+    grid-area: body / body / sidebar / sidebar;
+  }
+}
+
+@media (max-width: 600px) {
+  margin: unset;
+}

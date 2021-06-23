@@ -1,0 +1,19 @@
+.App {
+  display: grid;
+  grid-template-columns: 40px 1fr 300px 40px;
+  grid-template-rows: auto 1fr auto;
+  grid-column-gap: 20px;
+  grid-template-areas:
+  "header header header header"
+  "margin body sidebar margin2"
+  ". . . . ";
+  background: linear-gradient(180deg,hsla(0,0%,97.3%,.95) 44%,hsla(0,0%,97.3%,.46) 73%,hsla(0,0%,100%,0));
+}
+
+
+@media (max-width: 600px) {
+  .App {
+    grid-template-columns: 10px 1fr 300px 10px;
+  }
+
+}
